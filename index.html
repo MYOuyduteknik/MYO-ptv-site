@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MYO IPTV | Yayın Paketleri</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#ffffff;
+    color:#222;
+}
+
+header{
+    background:#fff;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #eee;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#c9a227;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:25px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#c9a227;
+}
+
+.hero{
+    min-height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#fff,#faf8f0);
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#c9a227;
+}
+
+.hero p{
+    font-size:19px;
+    color:#666;
+    max-width:650px;
+    margin:auto;
+    line-height:1.7;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:5px;
+}
+
+.gold{
+    background:#c9a227;
+    color:white;
+}
+
+.gold:hover{
+    background:#a98716;
+}
+
+.white{
+    background:white;
+    color:#333;
+    border:1px solid #ddd;
+}
+
+.section{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.section h2{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.subtitle{
+    color:#777;
+    margin-bottom:40px;
+}
+
+.country{
+    color:#c9a227;
+    font-size:25px;
+    margin:45px 0 25px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:22px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    border:1px solid #eee;
+    border-radius:14px;
+    padding:30px 20px;
+    box-shadow:0 5px 25px rgba(0,0,0,.07);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#c9a227;
+}
+
+.card h3{
+    font-size:21px;
+    margin-bottom:15px;
+}
+
+.price{
+    color:#c9a227;
+    font-size:30px;
+    font-weight:bold;
+    margin:20px 0;
+}
+
+.card p{
+    color:#777;
+    line-height:1.5;
+    margin-bottom:20px;
+}
+
+.contact{
+    background:#faf8f0;
+}
+
+footer{
+    background:#222;
+    color:#aaa;
+    text-align:center;
+    padding:25px;
+}
+
+footer span{
+    color:#c9a227;
+}
+
+@media(max-width:700px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav a{
+        margin:0 7px;
+        font-size:14px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .section{
+        padding:50px 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        MYO <span>IPTV</span>
+    </div>
+
+    <nav>
+        <a href="#anasayfa">Ana Sayfa</a>
+        <a href="#paketler">Paketler</a>
+        <a href="#iletisim">İletişim</a>
+    </nav>
+
+</header>
+
+
+<section class="hero" id="anasayfa">
+
+    <div>
+
+        <h1>
+            Kesintisiz <span>TV Yayını</span>
+        </h1>
+
+        <p>
+            Yasal yayın hizmetleri için kaliteli ve güvenilir
+            abonelik seçenekleri.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#paketler" class="btn gold">
+                Üyelik Paketleri
+            </a>
+
+            <a href="#iletisim" class="btn white">
+                İletişime Geç
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section" id="paketler">
+
+    <h2>Üyelik Paketleri</h2>
+
+    <p class="subtitle">
+        Size uygun paketi seçin.
+    </p>
+
+
+    <h3 class="country">
+        Yurt İçi – Türkiye
+    </h3>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>6 Aylık</h3>
+            <div class="price">700 TL</div>
+            <p>6 aylık abonelik paketi</p>
+            <a href="#iletisim" class="btn gold">Bilgi Al</a>
+        </div>
+
+
+        <div class="card">
+            <h3>Yıllık</h3>
+            <div class="price">1.200 TL</div>
+            <p>12 aylık abonelik paketi</p>
+            <a href="#iletisim" class="btn gold">Bilgi Al</a>
+        </div>
+
+
+        <div class="card">
+            <h3>2 Yıllık</h3>
+            <div class="price">2.000 TL</div>
+            <p>24 aylık abonelik paketi</p>
+            <a href="#iletisim" class="btn gold">Bilgi Al</a>
+        </div>
+
+
+        <div class="card">
+            <h3>3 Yıl + 2 Ay</h3>
+            <div class="price">2.600 TL</div>
+            <p>Uzun süreli abonelik paketi</p>
+            <a href="#iletisim" class="btn gold">Bilgi Al</a>
+        </div>
+
+    </div>
+
+
+    <h3 class="country">
+        Yurt Dışı
+    </h3>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>6 Aylık</h3>
+            <div class="price">850 TL</div>
+            <p>6 aylık abonelik paketi</p>
+            <a href="#iletisim" class="btn gold">Bilgi Al</a>
+        </div>
+
+
+        <div class="card">
+            <h3>Yıllık</h3>
+            <div class="price">1.250 TL</div>
+            <p>12 aylık abonelik paketi</p>
+            <a href="#iletisim" class="btn gold">Bilgi Al</a>
+        </div>
+
+
+        <div class="card">
+            <h3>2 Yıllık</h3>
+            <div class="price">2.250 TL</div>
+            <p>24 aylık abonelik paketi</p>
+            <a href="#iletisim" class="btn gold">Bilgi Al</a>
+        </div>
+
+
+        <div class="card">
+            <h3>3 Yıl + 2 Ay</h3>
+            <div class="price">2.750 TL</div>
+            <p>Uzun süreli abonelik paketi</p>
+            <a href="#iletisim" class="btn gold">Bilgi Al</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section contact" id="iletisim">
+
+    <h2>İletişim</h2>+1 205 351 3666
+
+    <p class="subtitle">
+        Üyelik ve hizmetler hakkında bilgi almak için bizimle iletişime geçebilirsiniz.
+    </p>
+
+    <a href="https://wa.me/+1 205 351 3666" class="btn gold">
+        WhatsApp'tan Yaz
+    </a>
+
+</section>
+
+
+<footer>
+
+    © 2026 <span>MYO IPTV</span> | Tüm hakları saklıdır.
+
+</footer>
+
+</body>
+</html>
